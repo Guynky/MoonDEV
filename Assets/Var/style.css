@@ -1,0 +1,7 @@
+.secao {
+    display: none; /* Oculta todas as seções inicialmente */
+}
+
+.secao.active {
+    display: block; /* Mostra a seção ativa */
+}
