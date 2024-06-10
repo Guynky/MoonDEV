@@ -1,7 +1,9 @@
-.secao {
-    display: none; /* Oculta todas as seções inicialmente */
+.VarPags {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; 
 }
-
-.secao.active {
-    display: block; /* Mostra a seção ativa */
+.secao {
+    background-color: #f0f0f0;
+    padding: 400px;
 }
