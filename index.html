@@ -1,182 +1,260 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <title>Home</title> 
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet">
+    <link rel="stylesheet" href="Assets\style.css">
+    <title>Responsive Dashboard Design #1 | AsmrProg</title>
 </head>
+
 <body>
 
-    <section class="PC">
-        <link rel="stylesheet" href="Assets\Pc\style.css">
-    <nav class="sidebar close">
-        <header>
-            <div class="image-text">
-                <span class="image">
-                    <img src="Assets\Pc\Moon.png" alt="">
-                </span>
-
-                <div class="text logo-text">
-                    <span class="name">Moon</span>
-                    <span class="profession">Dashboard </span>
+    <div class="container">
+        <!-- Sidebar Section -->
+        <aside>
+            <div class="toggle">
+                <div class="logo">
+                    <img src="Assets\images\logo.png">
+                    <h2>Asmr<span class="danger">Prog</span></h2>
+                </div>
+                <div class="close" id="close-btn">
+                    <span class="material-icons-sharp">
+                        close
+                    </span>
                 </div>
             </div>
 
-            <i class='bx bx-chevron-right toggle'></i>
-        </header>
+            <div class="sidebar">
+                <a href="#">
+                    <span class="material-icons-sharp">
+                        dashboard
+                    </span>
+                    <h3>Dashboard</h3>
+                </a>
+                <a href="#">
+                    <span class="material-icons-sharp">
+                        person_outline
+                    </span>
+                    <h3>Users</h3>
+                </a>
+                <a href="#">
+                    <span class="material-icons-sharp">
+                        receipt_long
+                    </span>
+                    <h3>History</h3>
+                </a>
+                <a href="#" class="active">
+                    <span class="material-icons-sharp">
+                        insights
+                    </span>
+                    <h3>Analytics</h3>
+                </a>
+                <a href="#">
+                    <span class="material-icons-sharp">
+                        mail_outline
+                    </span>
+                    <h3>Tickets</h3>
+                    <span class="message-count">27</span>
+                </a>
+                <a href="#">
+                    <span class="material-icons-sharp">
+                        inventory
+                    </span>
+                    <h3>Sale List</h3>
+                </a>
+                <a href="#">
+                    <span class="material-icons-sharp">
+                        report_gmailerrorred
+                    </span>
+                    <h3>Reports</h3>
+                </a>
+                <a href="#">
+                    <span class="material-icons-sharp">
+                        settings
+                    </span>
+                    <h3>Settings</h3>
+                </a>
+                <a href="#">
+                    <span class="material-icons-sharp">
+                        add
+                    </span>
+                    <h3>New Login</h3>
+                </a>
+                <a href="#">
+                    <span class="material-icons-sharp">
+                        logout
+                    </span>
+                    <h3>Logout</h3>
+                </a>
+            </div>
+        </aside>
+        <!-- End of Sidebar Section -->
 
-        <div class="menu-bar">
-            <div class="menu">
+        <!-- Main Content -->
+        <main>
+            <h1>Analytics</h1>
+            <!-- Analyses -->
+            <div class="analyse">
+                <div class="sales">
+                    <div class="status">
+                        <div class="info">
+                            <h3>Total Sales</h3>
+                            <h1>$65,024</h1>
+                        </div>
+                        <div class="progresss">
+                            <svg>
+                                <circle cx="38" cy="38" r="36"></circle>
+                            </svg>
+                            <div class="percentage">
+                                <p>+81%</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="visits">
+                    <div class="status">
+                        <div class="info">
+                            <h3>Site Visit</h3>
+                            <h1>24,981</h1>
+                        </div>
+                        <div class="progresss">
+                            <svg>
+                                <circle cx="38" cy="38" r="36"></circle>
+                            </svg>
+                            <div class="percentage">
+                                <p>-48%</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="searches">
+                    <div class="status">
+                        <div class="info">
+                            <h3>Searches</h3>
+                            <h1>14,147</h1>
+                        </div>
+                        <div class="progresss">
+                            <svg>
+                                <circle cx="38" cy="38" r="36"></circle>
+                            </svg>
+                            <div class="percentage">
+                                <p>+21%</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End of Analyses -->
 
-                <li class="search-box">
-                    <i class='bx bx-search icon'></i>
-                    <input type="text" placeholder="Search...">
-                </li>
+            
 
-                <ul class="menu-links">
-                    <li class="nav-link">
-                        <a href="#home">
-                            <i class='bx bx-home-alt icon' ></i>
-                            <span class="text nav-text">Home</span>
-                        </a>
-                    </li>
+        </main>
+        <!-- End of Main Content -->
 
-                    <li class="nav-link">
-                        <a href="#notes">
-                            <i class='bx bx-notepad icon' ></i>
-                            <span class="text nav-text">Notes</span>
-                        </a>
-                    </li>
+        <!-- Right Section -->
+        <div class="right-section">
+            <div class="nav">
+                <button id="menu-btn">
+                    <span class="material-icons-sharp">
+                        menu
+                    </span>
+                </button>
+                <div class="dark-mode">
+                    <span class="material-icons-sharp active">
+                        light_mode
+                    </span>
+                    <span class="material-icons-sharp">
+                        dark_mode
+                    </span>
+                </div>
 
-                    <li class="nav-link">
-                        <a href="#files">
-                            <i class='bx bx-download icon' ></i>
-                            <span class="text nav-text">Files</span>
-                        </a>
-                    </li>
+                <div class="profile">
+                    <div class="info">
+                        <p>Hey, <b>Reza</b></p>
+                        <small class="text-muted">Admin</small>
+                    </div>
+                    <div class="profile-photo">
+                        <img src="Assets\images\profile-1.jpg">
+                    </div>
+                </div>
 
-                    <li class="nav-link">
-                        <a href="#dev">
-                            <i class='bx bxl-deviantart icon' ></i>
-                            <span class="text nav-text">Dev G.</span>
-                        </a>
-                    </li>
+            </div>
+            <!-- End of Nav -->
 
-                    <li class="nav-link">
-                        <a href="#moon">
-                            <i class='bx bx-moon icon' ></i>
-                            <span class="text nav-text">Moon</span>
-                        </a>
-                    </li>
-
-                </ul>
+            <div class="user-profile">
+                <div class="logo">
+                    <img src="Assets\images\logo.png">
+                    <h2>AsmrProg</h2>
+                    <p>Fullstack Web Developer</p>
+                </div>
             </div>
 
-            <div class="bottom-content">
-    
+            <div class="reminders">
+                <div class="header">
+                    <h2>Reminders</h2>
+                    <span class="material-icons-sharp">
+                        notifications_none
+                    </span>
+                </div>
 
-                <li class="mode">
-                    <div class="sun-moon">
-                        <i class='bx bxs-binoculars icon'></i>
-                    
+                <div class="notification">
+                    <div class="icon">
+                        <span class="material-icons-sharp">
+                            volume_up
+                        </span>
                     </div>
-                    <span class="mode-text text">Dark mode</span>
+                    <div class="content">
+                        <div class="info">
+                            <h3>Workshop</h3>
+                            <small class="text_muted">
+                                08:00 AM - 12:00 PM
+                            </small>
+                        </div>
+                        <span class="material-icons-sharp">
+                            more_vert
+                        </span>
+                    </div>
+                </div>
 
-                    <div class="toggle-switch">
-                        <span class="switch"></span>
+                <div class="notification deactive">
+                    <div class="icon">
+                        <span class="material-icons-sharp">
+                            edit
+                        </span>
                     </div>
-                </li>
-                
+                    <div class="content">
+                        <div class="info">
+                            <h3>Workshop</h3>
+                            <small class="text_muted">
+                                08:00 AM - 12:00 PM
+                            </small>
+                        </div>
+                        <span class="material-icons-sharp">
+                            more_vert
+                        </span>
+                    </div>
+                </div>
+
+                <div class="notification add-reminder">
+                    <div>
+                        <span class="material-icons-sharp">
+                            add
+                        </span>
+                        <h3>Add Reminder</h3>
+                    </div>
+                </div>
+
             </div>
+
         </div>
- <script src="Assets\Pc\script.js"></script>
-    </nav>
 
-    </section>
 
-    <section class="mobile">
-     <link rel="stylesheet" href="Assets\Mobile\style.css">
-        <div class="navigation">
-            <ul>
-                <li class="list active">
-                    <a href="#home">
-                        <span class="icon">
-                            <i class='bx bx-home' ></i>
-                        </span>
-                        <span class="text">Home</span>
-                        <span class="circle"></span>
-                    </a>
-                </li>
-                <li class="list">
-                    <a href="#notes">
-                        <span class="icon">
-                            <i class='bx bx-notepad' ></i>
-                        </span>
-                        <span class="text">Notes</span>
-                        <span class="circle"></span>
-                    </a>
-                </li>
-                <li class="list">
-                    <a href="#moon">
-                        <span class="icon">
-                            <i class='bx bx-moon' ></i>
-                        </span>
-                        <span class="text">Moon</span>
-                        <span class="circle"></span>
-                    </a>
-                </li>
-                <li class="list">
-                    <a href="#dev">
-                        <span class="icon">
-                            <i class='bx bxl-deviantart' ></i>
-                        </span>
-                        <span class="text">Dev</span>
-                        <span class="circle"></span>
-                    </a>
-                </li>
-                <li class="list">
-                    <a href="#files">
-                        <span class="icon">
-                            <i class='bx bx-download' ></i>
-                        </span>
-                        <span class="text">Files</span>
-                        <span class="circle"></span>
-                    </a>
-                </li>
-                <div class="indicator"></div>
-            </ul>
-        </div>
-    
-        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-        <script src="Assets\Mobile\script.js"></script>
-    </section>
-
-    <section class="VArPags">
-        <link rel="stylesheet" href="Assets\Var\style.css">
-    <div class="secao" id="home">
-        <div class="text">Home</div>
     </div>
 
-    <div class="secao" id="files">
-        <div class="text">Files</div>
-    </div>
-
-    <div class="secao" id="moon">
-        <div class="text">Moon</div>
-    </div>
-
-    <div class="secao" id="dev">
-        <div class="text">Dev</div>
-    </div>
-
-    <div class="secao" id="notes">
-        <div class="text">Notes</div>
-    </div>
-    
-    </section>
-
+    <script src="Assets\orders.js"></script>
+    <script src="Assets\index.js"></script>
 </body>
+
 </html>
