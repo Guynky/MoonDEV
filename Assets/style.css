@@ -706,3 +706,9 @@ main .recent-orders a{
     }
 
 }
+/* Remove o destaque azul ao clicar em qualquer elemento em dispositivos móveis */
+* {
+    outline: none;
+    -webkit-tap-highlight-color: transparent;
+  }
+  
